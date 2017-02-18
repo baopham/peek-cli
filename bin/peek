@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+const program = require('commander');
+const peek = require('../peek');
+
+program
+  .version('0.0.1')
+  .usage('peek')
+  .option('-f, --file <file>', 'Path to the file')
+  .option('-l, --lookup <lookup>', 'Lookup')
+  .parse(process.argv);
+
+peek(program.file, program.lookup);

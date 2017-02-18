@@ -1,0 +1,25 @@
+{
+  "name": "peek",
+  "version": "1.0.0",
+  "description": "Search for things in an image",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "index.js",
+    "bin/"
+  ],
+  "bin": {
+    "peek": "bin/peek"
+  },
+  "keywords": [
+    "OCR"
+  ],
+  "author": "Bao Pham",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "node-tesseract": "^0.2.7"
+  }
+}
