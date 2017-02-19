@@ -1,5 +1,5 @@
 {
-  "name": "peek",
+  "name": "peek-cli",
   "version": "1.0.0",
   "description": "Search for things in an image",
   "main": "index.js",
@@ -16,6 +16,9 @@
   "keywords": [
     "OCR"
   ],
+  "engines": {
+      "node": ">=6.0"
+  },
   "author": "Bao Pham",
   "license": "MIT",
   "dependencies": {
