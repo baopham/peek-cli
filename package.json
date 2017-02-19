@@ -1,6 +1,6 @@
 {
   "name": "peek-cli",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Search for things in an image",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,8 @@
   },
   "files": [
     "index.js",
+    "peekSubString.js",
+    "peekFullWord.js",
     "bin/"
   ],
   "bin": {
@@ -19,7 +21,17 @@
   "engines": {
       "node": ">=6.0"
   },
-  "author": "Bao Pham",
+  "author": {
+    "name": "Bao Pham",
+    "url": "https://github.com/baopham"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/baopham/peek-cli.git"
+  },
+  "bugs": {
+    "url": "git://github.com/baopham/peek-cli.git"
+  },
   "license": "MIT",
   "dependencies": {
     "chalk": "^1.1.3",

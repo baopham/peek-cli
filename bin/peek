@@ -1,17 +1,15 @@
 #!/usr/bin/env node
 
 const program = require('commander');
-const peekSubString = require('../peekSubString');
-const peekFullWorld = require('../peekFullWord');
+const lib = require('..');
 
 program
   .version('0.0.1')
-  .usage('peek')
   .option('-f, --file <file>', 'path to the file')
   .option('-l, --lookup <lookup>', 'items to lookup. Comma separated')
   .option('-s, --substring', 'whether to look for substring or not. Default to find the full word')
   .parse(process.argv);
 
-const peek = program.substring ? peekSubString : peekFullWorld;
+const peek = program.substring ? lib.peekSubString : lib.peekFullWord;
 
 program.lookup.split(',').forEach(lookup => peek(program.file, lookup.trim()));
