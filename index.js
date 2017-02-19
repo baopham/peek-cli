@@ -1,3 +1,7 @@
-const peek = require('./peek');
+const peekSubString = require('./peekSubString');
+const peekFullWord = require('./peekFullWord');
 
-module.exports = peek;
+module.exports = {
+  peekSubString,
+  peekFullWord
+};

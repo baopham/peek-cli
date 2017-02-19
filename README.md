@@ -1,6 +1,6 @@
 peek
 ===
-[WIP] CLI to search for things in image
+CLI to search for texts in image
 
 Usage:
 ------

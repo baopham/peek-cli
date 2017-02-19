@@ -19,6 +19,7 @@
   "author": "Bao Pham",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^1.1.3",
     "commander": "^2.9.0",
     "node-tesseract": "^0.2.7"
   }
